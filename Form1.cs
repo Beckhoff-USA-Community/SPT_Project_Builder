@@ -23,8 +23,8 @@ namespace TcTemplateBuilder
             var modules = new List<Module>();
             modules.Add(new Module() { Type = TcType.Machine, Name = "Machine", Parent = "None" });
             modules.Add(new Module() { Type = TcType.Equipment, Name = "EquipmentModule1", Parent = "Machine" });
-            modules.Add(new Module() { Type = TcType.Component, Name = "Axis", Parent = "EquipmentModule1" });
-            modules.Add(new Module() { Type = TcType.Component, Name = "Cylinder", Parent = "EquipmentModule1" });
+            modules.Add(new Module() { Type = TcType.Component, Name = "WeighScale", Parent = "EquipmentModule1" });
+            modules.Add(new Module() { Type = TcType.Component, Name = "RotaryKnife", Parent = "EquipmentModule2" });
             modules.Add(new Module() { Type = TcType.Equipment, Name = "EquipmentModule2", Parent = "Machine" });
             modules.Add(new Module() { Type = TcType.Equipment, Name = "EquipmentModule3", Parent = "Machine" });
 
@@ -154,7 +154,7 @@ namespace TcTemplateBuilder
                         break;
                     case TcType.Component:
                         type = "C";
-                        parentName = "FB_CustomComponentBase";
+                        parentName = "FB_ComponentBase";
                         break;
                 }
 
@@ -335,7 +335,7 @@ namespace TcTemplateBuilder
 
             //Add Predefined FBs
             //  FB_CustomComponentBase
-            TwinCATController.createComponentOrEM(PredefinedFunctionBlocks[0]);
+            //TwinCATController.createComponentOrEM(PredefinedFunctionBlocks[0]);
             //  FB_CustomModuleBase
             TwinCATController.createComponentOrEM(PredefinedFunctionBlocks[1]);
 
