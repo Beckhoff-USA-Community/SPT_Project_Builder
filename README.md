@@ -14,6 +14,6 @@ Further Information on the use of Automation Interface can be found witin the [B
 
 The following components must be installed to run sample code:
 
-- [TE1000 TwinCAT 3 Engineering](https://www.beckhoff.com/en-en/products/automation/twincat/te1xxx-twincat-3-engineering/te1000.html) version 3.1.4024.0 or higher
+- [TE1000 TwinCAT 3 Engineering](https://www.beckhoff.com/en-en/support/download-finder/search-result/?download_group=97028248) version 3.1.4024.0 or higher
 - All [SPT Libraries](https://github.com/Beckhoff-USA-Community/SPT-Libraries)
-
+- Visual Studio 2022
